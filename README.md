@@ -1,5 +1,7 @@
 # kamiza
 
+[![CircleCI](https://circleci.com/gh/in-field/kamiza.svg?style=svg)](https://circleci.com/gh/in-field/kamiza)
+
 ## Project setup
 ```
 yarn install
