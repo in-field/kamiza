@@ -34,4 +34,4 @@ jobs:
         - ~/.cache/yarn
 
     # run tests!
-    - run: yarn test:unit
+    - run: yarn test:unit-ci
