@@ -1,6 +1,7 @@
 # kamiza
 
 [![CircleCI](https://circleci.com/gh/in-field/kamiza.svg?style=svg)](https://circleci.com/gh/in-field/kamiza)
+[![codecov](https://codecov.io/gh/in-field/kamiza/branch/develop/graph/badge.svg)](https://codecov.io/gh/in-field/kamiza)
 
 ## Project setup
 ```
