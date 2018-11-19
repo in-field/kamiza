@@ -13,6 +13,10 @@
     "build:storybook": "vue-cli-service build:storybook -c config/storybook"
   },
   "dependencies": {
+    "@storybook/addon-knobs": "^4.0.7",
+    "@storybook/addon-notes": "^4.0.7",
+    "@storybook/addon-viewport": "^4.0.7",
+    "storybook-addon-vue-info": "^0.7.0",
     "vue": "^2.5.17"
   },
   "devDependencies": {
