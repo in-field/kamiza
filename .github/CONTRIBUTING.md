@@ -1,8 +1,5 @@
 # Kamizaへようこそ
+> Repositoryの説明
 
-
-# 開発環境構築方法
-
-
-# Repositoryルール
-
+# Contributor 
+> 開発環境の構築や開発ルールなど
