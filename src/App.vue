@@ -17,7 +17,7 @@
     </v-toolbar>
 
     <v-content>
-      <HelloWorld/>
+      <HelloWorld msg= "Welcome to Your Vue.js App" />
     </v-content>
   </v-app>
 </template>
