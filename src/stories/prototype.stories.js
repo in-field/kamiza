@@ -43,7 +43,7 @@ storiesOf("Prototype", module)
       const Height = text("height", "150px");
       return {
         components: { Prototype },
-        template: `<Prototype class="${Class}" backgroundColor="${BackgroundColor}" width="${Width}" height="${Height}"/>`,
+        template: `<prototype class="${Class}" backgroundColor="${BackgroundColor}" width="${Width}" height="${Height}"/>`,
         propsDescription: {
           class: "ヘッダーに適用させるデザインのクラス",
           backgroundColor: "ヘッダーの背景色",
