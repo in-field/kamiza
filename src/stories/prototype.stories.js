@@ -5,13 +5,13 @@ import VueInfoAddon from "storybook-addon-vue-info";
 import { withMarkdownNotes } from "@storybook/addon-notes";
 import { withKnobs, select, color, text } from "@storybook/addon-knobs";
 
-import Kamiza from "../components/Kamiza.vue";
+import Prototype from "../components/Prototype.vue";
 
-storiesOf("Header", module)
+storiesOf("Prototype", module)
   .addDecorator(VueInfoAddon)
   .addDecorator(withKnobs)
   .add(
-    "with kamiza",
+    "with header",
     withMarkdownNotes(`
 # Class
   - Knobsの用途
@@ -42,8 +42,8 @@ storiesOf("Header", module)
       const Width = text("width", "auto");
       const Height = text("height", "150px");
       return {
-        components: { Kamiza },
-        template: `<kamiza class="${Class}" backgroundColor="${BackgroundColor}" width="${Width}" height="${Height}"/>`,
+        components: { Prototype },
+        template: `<Prototype class="${Class}" backgroundColor="${BackgroundColor}" width="${Width}" height="${Height}"/>`,
         propsDescription: {
           class: "ヘッダーに適用させるデザインのクラス",
           backgroundColor: "ヘッダーの背景色",
