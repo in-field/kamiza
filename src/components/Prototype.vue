@@ -15,7 +15,7 @@
 
 <script>
 export default {
-  name: "Kamiza",
+  name: "Prototype",
   props: {
     class: {
       type: String,
