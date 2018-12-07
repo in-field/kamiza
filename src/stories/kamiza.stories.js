@@ -6,6 +6,7 @@ import { withMarkdownNotes } from "@storybook/addon-notes";
 import { withKnobs, text } from "@storybook/addon-knobs";
 
 import Kamiza from "../components/Kamiza.vue";
+import Kondate from "../components/Kondate";
 
 storiesOf("Kamiza", module)
   .addDecorator(VueInfoAddon)
@@ -24,6 +25,19 @@ storiesOf("Kamiza", module)
         propsDescription: {
           title: "ヘッダーに表示させるタイトル"
         }
+      };
+    })
+  )
+  .add(
+    "with menu",
+    withMarkdownNotes(`
+# undefined
+  - Knobsの用途
+      - undefined
+    `)(() => {
+      return {
+        components: { Kondate },
+        template: `<kondate/>`
       };
     })
   );
