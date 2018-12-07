@@ -7,6 +7,7 @@ import { withKnobs, text } from "@storybook/addon-knobs";
 
 import Kamiza from "../components/Kamiza.vue";
 import Kondate from "../components/Kondate";
+import Kenmi from "../components/Kenmi";
 
 storiesOf("Kamiza", module)
   .addDecorator(VueInfoAddon)
@@ -38,6 +39,19 @@ storiesOf("Kamiza", module)
       return {
         components: { Kondate },
         template: `<kondate/>`
+      };
+    })
+  )
+  .add(
+    "with search",
+    withMarkdownNotes(`
+# undefined
+  - Knobsの用途
+      - undefined
+    `)(() => {
+      return {
+        components: { Kenmi },
+        template: `<kenmi/>`
       };
     })
   );
