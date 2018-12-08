@@ -7,6 +7,7 @@ import { withKnobs, text } from "@storybook/addon-knobs";
 
 import Kamiza from "../components/Kamiza.vue";
 import Kondate from "../components/Kondate";
+import Warifu from "../components/Warifu";
 import Kenmi from "../components/Kenmi";
 import Zendate from "../components/Zendate";
 
@@ -40,6 +41,19 @@ storiesOf("Kamiza", module)
       return {
         components: { Kondate },
         template: `<kondate/>`
+      };
+    })
+  )
+  .add(
+    "with auth",
+    withMarkdownNotes(`
+# undefined
+  - Knobsの用途
+      - undefined
+    `)(() => {
+      return {
+        components: { Warifu },
+        template: `<warifu/>`
       };
     })
   )

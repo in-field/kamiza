@@ -15,6 +15,8 @@
 
       <v-spacer></v-spacer>
 
+      <warifu></warifu>
+
       <kenmi></kenmi>
 
       <zendate></zendate>
@@ -27,9 +29,10 @@ import "../plugins/vuetify";
 import Kondate from "./Kondate";
 import Zendate from "./Zendate";
 import Kenmi from "./Kenmi";
+import Warifu from "./Warifu";
 
 export default {
-  components: { Kenmi, Zendate, Kondate },
+  components: { Kenmi, Zendate, Kondate, Warifu },
   props: {
     title: {
       type: String,
