@@ -11,7 +11,7 @@
     <v-toolbar color="cyan" dark>
       <kondate></kondate>
 
-      <v-toolbar-title>{{ title }}</v-toolbar-title>
+      <daimei :title="title"></daimei>
 
       <v-spacer></v-spacer>
 
@@ -30,13 +30,13 @@ import Kondate from "./Kondate";
 import Zendate from "./Zendate";
 import Kenmi from "./Kenmi";
 import Warifu from "./Warifu";
+import Daimei from "./Daimei";
 
 export default {
-  components: { Kenmi, Zendate, Kondate, Warifu },
+  components: { Kenmi, Zendate, Kondate, Warifu, Daimei },
   props: {
     title: {
-      type: String,
-      default: "タイトル"
+      type: String
     }
   }
 };

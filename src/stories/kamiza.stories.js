@@ -10,6 +10,7 @@ import Kondate from "../components/Kondate";
 import Warifu from "../components/Warifu";
 import Kenmi from "../components/Kenmi";
 import Zendate from "../components/Zendate";
+import Daimei from "../components/Daimei";
 
 storiesOf("Kamiza", module)
   .addDecorator(VueInfoAddon)
@@ -19,14 +20,14 @@ storiesOf("Kamiza", module)
     withMarkdownNotes(`
 # Title
   - Knobsの用途
-      - headerに表示させたいタイトルを入力してください
+      - 表示させたい文言を入力してください
     `)(() => {
       const Title = text("title", "タイトル");
       return {
         components: { Kamiza },
         template: `<kamiza title="${Title}"/>`,
         propsDescription: {
-          title: "ヘッダーに表示させるタイトル"
+          title: "titleを利用しない場合はDaimeiComponentの初期値が表示されます"
         }
       };
     })
@@ -41,6 +42,23 @@ storiesOf("Kamiza", module)
       return {
         components: { Kondate },
         template: `<kondate/>`
+      };
+    })
+  )
+  .add(
+    "with title",
+    withMarkdownNotes(`
+# Title
+  - Knobsの用途
+      - 表示させたい文言を入力してください
+    `)(() => {
+      const Title = text("title", "タイトル");
+      return {
+        components: { Daimei },
+        template: `<daimei title="${Title}"/>`,
+        propsDescription: {
+          title: "タイトルを表示"
+        }
       };
     })
   )
