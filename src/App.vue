@@ -16,24 +16,22 @@
       </v-btn>
     </v-toolbar>
 
-    <v-content>
-      <HelloWorld msg= "Welcome to Your Vue.js App" />
-    </v-content>
+    <v-content> <HelloWorld msg="Welcome to Your Vue.js App" /> </v-content>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import HelloWorld from "./components/HelloWorld";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     HelloWorld
   },
-  data () {
+  data() {
     return {
       //
-    }
+    };
   }
-}
+};
 </script>
