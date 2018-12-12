@@ -9,17 +9,17 @@
       rel="stylesheet"
     />
     <v-toolbar color="cyan" dark>
-      <kondate></kondate>
+      <kondate :activate="activate"></kondate>
 
-      <daimei :title="title"></daimei>
+      <daimei :activate="activate" :title="title"></daimei>
 
       <v-spacer></v-spacer>
 
-      <warifu></warifu>
+      <warifu :activate="activate"></warifu>
 
-      <kenmi></kenmi>
+      <kenmi :activate="activate"></kenmi>
 
-      <zendate></zendate>
+      <zendate :activate="activate"></zendate>
     </v-toolbar>
   </div>
 </template>
@@ -35,6 +35,10 @@ import Daimei from "./Daimei";
 export default {
   components: { Kenmi, Zendate, Kondate, Warifu, Daimei },
   props: {
+    activate: {
+      type: Boolean,
+      default: false
+    },
     title: {
       type: String
     }

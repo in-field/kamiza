@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="activate">
     <link
       rel="stylesheet"
       href="https://cdn.materialdesignicons.com/2.5.94/css/materialdesignicons.min.css"
@@ -15,9 +15,13 @@
 <script>
 export default {
   props: {
+    activate: {
+      type: Boolean,
+      default: false
+    },
     title: {
       type: String,
-      default: "タイトル"
+      default: "題名"
     }
   }
 };

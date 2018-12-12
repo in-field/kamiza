@@ -3,7 +3,7 @@ import { storiesOf } from "@storybook/vue";
 
 import VueInfoAddon from "storybook-addon-vue-info";
 import { withMarkdownNotes } from "@storybook/addon-notes";
-import { withKnobs, text } from "@storybook/addon-knobs";
+import { withKnobs, text, boolean } from "@storybook/addon-knobs";
 
 import Kamiza from "../components/Kamiza.vue";
 import Kondate from "../components/Kondate";
@@ -22,11 +22,13 @@ storiesOf("Kamiza", module)
   - Knobsの用途
       - 表示させたい文言を入力してください
     `)(() => {
+      const Activate = boolean("activate", false);
       const Title = text("title", "タイトル");
       return {
         components: { Kamiza },
-        template: `<kamiza title="${Title}"/>`,
+        template: `<kamiza :activate="${Activate}" title="${Title}"/>`,
         propsDescription: {
+          activate: "Componentを有効にするフラグ",
           title: "titleを利用しない場合はDaimeiComponentの初期値が表示されます"
         }
       };
@@ -39,9 +41,13 @@ storiesOf("Kamiza", module)
   - Knobsの用途
       - undefined
     `)(() => {
+      const Activate = boolean("activate", false);
       return {
         components: { Kondate },
-        template: `<kondate/>`
+        template: `<kondate :activate="${Activate}"/>`,
+        propsDescription: {
+          activate: "Componentを有効にするフラグ"
+        }
       };
     })
   )
@@ -52,11 +58,13 @@ storiesOf("Kamiza", module)
   - Knobsの用途
       - 表示させたい文言を入力してください
     `)(() => {
+      const Activate = boolean("activate", false);
       const Title = text("title", "タイトル");
       return {
         components: { Daimei },
-        template: `<daimei title="${Title}"/>`,
+        template: `<daimei :activate="${Activate}" title="${Title}"/>`,
         propsDescription: {
+          activate: "Componentを有効にするフラグ",
           title: "タイトルを表示"
         }
       };
@@ -69,9 +77,13 @@ storiesOf("Kamiza", module)
   - Knobsの用途
       - undefined
     `)(() => {
+      const Activate = boolean("activate", false);
       return {
         components: { Warifu },
-        template: `<warifu/>`
+        template: `<warifu :activate="${Activate}"/>`,
+        propsDescription: {
+          activate: "Componentを有効にするフラグ"
+        }
       };
     })
   )
@@ -82,9 +94,13 @@ storiesOf("Kamiza", module)
   - Knobsの用途
       - undefined
     `)(() => {
+      const Activate = boolean("activate", false);
       return {
         components: { Kenmi },
-        template: `<kenmi/>`
+        template: `<kenmi :activate="${Activate}"/>`,
+        propsDescription: {
+          activate: "Componentを有効にするフラグ"
+        }
       };
     })
   )
@@ -95,9 +111,13 @@ storiesOf("Kamiza", module)
   - Knobsの用途
       - undefined
     `)(() => {
+      const Activate = boolean("activate", false);
       return {
         components: { Zendate },
-        template: `<zendate/>`
+        template: `<zendate :activate="${Activate}"/>`,
+        propsDescription: {
+          activate: "Componentを有効にするフラグ"
+        }
       };
     })
   );
