@@ -26,11 +26,11 @@
 
 <script>
 import "../plugins/vuetify";
-import DrawerMenu from "./Kondate";
-import Setup from "./Zendate";
-import Search from "./Kenmi";
-import Auth from "./Warifu";
-import HeaderTitle from "./Daimei";
+import DrawerMenu from "./DrawerMenu";
+import Setup from "./Setup";
+import Search from "./Search";
+import Auth from "./Auth";
+import HeaderTitle from "./HeaderTitle";
 
 export default {
   components: { DrawerMenu, Setup, Search, Auth, HeaderTitle },

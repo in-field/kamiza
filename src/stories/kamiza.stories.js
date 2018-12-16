@@ -6,11 +6,11 @@ import { withMarkdownNotes } from "@storybook/addon-notes";
 import { withKnobs, text, boolean } from "@storybook/addon-knobs";
 
 import Kamiza from "../components/Kamiza.vue";
-import DrawerMenu from "../components/Kondate";
-import Auth from "../components/Warifu";
-import Search from "../components/Kenmi";
-import Setup from "../components/Zendate";
-import HeaderTitle from "../components/Daimei";
+import DrawerMenu from "../components/DrawerMenu";
+import Auth from "../components/Auth";
+import Search from "../components/Search";
+import Setup from "../components/Setup";
+import HeaderTitle from "../components/HeaderTitle";
 
 storiesOf("Kamiza", module)
   .addDecorator(VueInfoAddon)
