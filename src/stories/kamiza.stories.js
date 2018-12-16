@@ -36,6 +36,24 @@ storiesOf("Kamiza", module)
     })
   )
   .add(
+    "with base",
+    withMarkdownNotes(`
+# Title
+  - Knobsの用途
+      - undefined
+    `)(() => {
+      return {
+        components: { Kamiza },
+        template: `<kamiza/>`,
+        propsDescription: {
+          activate: "Componentを有効にするフラグ",
+          title:
+            "titleを利用しない場合はHeaderTitleComponentの初期値が表示されます"
+        }
+      };
+    })
+  )
+  .add(
     "with menu",
     withMarkdownNotes(`
 # undefined
