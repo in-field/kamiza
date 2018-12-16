@@ -9,31 +9,31 @@
       rel="stylesheet"
     />
     <v-toolbar color="cyan" dark>
-      <kondate :activate="activate"></kondate>
+      <drawer-menu :activate="activate"></drawer-menu>
 
-      <daimei :activate="activate" :title="title"></daimei>
+      <header-title :activate="activate" :title="title"></header-title>
 
       <v-spacer></v-spacer>
 
-      <warifu :activate="activate"></warifu>
+      <auth :activate="activate"></auth>
 
-      <kenmi :activate="activate"></kenmi>
+      <search :activate="activate"></search>
 
-      <zendate :activate="activate"></zendate>
+      <setup :activate="activate"></setup>
     </v-toolbar>
   </div>
 </template>
 
 <script>
 import "../plugins/vuetify";
-import Kondate from "./Kondate";
-import Zendate from "./Zendate";
-import Kenmi from "./Kenmi";
-import Warifu from "./Warifu";
-import Daimei from "./Daimei";
+import DrawerMenu from "./DrawerMenu";
+import Setup from "./Setup";
+import Search from "./Search";
+import Auth from "./Auth";
+import HeaderTitle from "./HeaderTitle";
 
 export default {
-  components: { Kenmi, Zendate, Kondate, Warifu, Daimei },
+  components: { DrawerMenu, Setup, Search, Auth, HeaderTitle },
   props: {
     activate: {
       type: Boolean,
