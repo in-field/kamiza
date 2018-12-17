@@ -5,12 +5,12 @@ import VueInfoAddon from "storybook-addon-vue-info";
 import { withMarkdownNotes } from "@storybook/addon-notes";
 import { withKnobs, text, boolean } from "@storybook/addon-knobs";
 
-import Kamiza from "../components/Kamiza.vue";
-import DrawerMenu from "../components/DrawerMenu";
-import Auth from "../components/Auth";
-import Search from "../components/Search";
-import Setup from "../components/Setup";
-import HeaderTitle from "../components/HeaderTitle";
+import Kamiza from "../components/kamiza/Kamiza.vue";
+import DrawerMenu from "../components/kamiza/DrawerMenu";
+import Auth from "../components/kamiza/Auth";
+import Search from "../components/kamiza/Search";
+import Setup from "../components/kamiza/Setup";
+import HeaderTitle from "../components/kamiza/HeaderTitle";
 
 storiesOf("Kamiza", module)
   .addDecorator(VueInfoAddon)
