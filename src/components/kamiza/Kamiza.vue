@@ -25,12 +25,12 @@
 </template>
 
 <script>
-import "../plugins/vuetify";
-import DrawerMenu from "./DrawerMenu";
-import Setup from "./Setup";
-import Search from "./Search";
-import Auth from "./Auth";
-import HeaderTitle from "./HeaderTitle";
+import "../../plugins/vuetify";
+import DrawerMenu from "../kamiza/DrawerMenu";
+import Setup from "../kamiza/Setup";
+import Search from "../kamiza/Search";
+import Auth from "../kamiza/Auth";
+import HeaderTitle from "../kamiza/HeaderTitle";
 
 export default {
   components: { DrawerMenu, Setup, Search, Auth, HeaderTitle },
