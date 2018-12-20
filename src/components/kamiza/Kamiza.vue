@@ -8,7 +8,7 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <v-toolbar color="cyan" dark>
+    <v-toolbar :color="color" :dark="dark">
       <drawer-menu :activate="activate"></drawer-menu>
 
       <header-title :activate="activate" :title="title"></header-title>
@@ -41,6 +41,14 @@ export default {
     },
     title: {
       type: String
+    },
+    dark: {
+      type: String,
+      default: ""
+    },
+    color: {
+      type: String,
+      default: "cyan"
     }
   }
 };

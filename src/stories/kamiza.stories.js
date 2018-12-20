@@ -3,7 +3,7 @@ import { storiesOf } from "@storybook/vue";
 
 import VueInfoAddon from "storybook-addon-vue-info";
 import { withMarkdownNotes } from "@storybook/addon-notes";
-import { withKnobs, text, boolean } from "@storybook/addon-knobs";
+import { withKnobs, text, boolean, color } from "@storybook/addon-knobs";
 
 import Kamiza from "../components/kamiza/Kamiza.vue";
 import DrawerMenu from "../components/kamiza/DrawerMenu";
@@ -24,13 +24,16 @@ storiesOf("Kamiza", module)
     `)(() => {
       const Activate = boolean("activate", false);
       const Title = text("title", "タイトル");
+      const Color = color("color", "cyan");
+      const Dark = text("dark", "");
       return {
         components: { Kamiza },
-        template: `<kamiza :activate="${Activate}" title="${Title}"/>`,
+        template: `<kamiza :activate="${Activate}" title="${Title}" color="${Color}" dark="${Dark}"/>`,
         propsDescription: {
           activate: "Componentを有効にするフラグ",
-          title:
-            "titleを利用しない場合はHeaderTitleComponentの初期値が表示されます"
+          title: "titleを利用しない場合はHeaderTitleComponentの初期値が表示されます",
+          color: "KamizaComponentのバックグラウンドカラーです",
+          dark: "KamizaComponentで利用するComponentの明度(白、黒)の切り替えができます"
         }
       };
     })
