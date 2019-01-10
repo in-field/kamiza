@@ -1,6 +1,6 @@
 <template>
   <div v-if="activate">
-    <v-toolbar-side-icon></v-toolbar-side-icon>
+    <v-btn icon> <v-icon>more_vert</v-icon> </v-btn>
   </div>
 </template>
 
