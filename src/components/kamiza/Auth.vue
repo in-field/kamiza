@@ -1,13 +1,5 @@
 <template>
   <div v-if="activate">
-    <link
-      rel="stylesheet"
-      href="https://cdn.materialdesignicons.com/2.5.94/css/materialdesignicons.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
     <v-btn icon> <v-icon>lock</v-icon> </v-btn>
   </div>
 </template>
