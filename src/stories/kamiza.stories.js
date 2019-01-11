@@ -5,6 +5,9 @@ import VueInfoAddon from "storybook-addon-vue-info";
 import { withMarkdownNotes } from "@storybook/addon-notes";
 import { withKnobs, text, boolean, color } from "@storybook/addon-knobs";
 
+import "../plugins/vuetify";
+import 'material-design-icons-iconfont/dist/material-design-icons.css';
+
 import Kamiza from "../components/kamiza/Kamiza.vue";
 import DrawerMenu from "../components/kamiza/DrawerMenu";
 import Auth from "../components/kamiza/Auth";
